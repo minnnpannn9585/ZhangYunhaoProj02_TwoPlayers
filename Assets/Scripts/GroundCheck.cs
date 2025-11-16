@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
+    [HideInInspector]
     public PlayerOneMove playerOneMove;
 
     private void Start()

@@ -11,16 +11,16 @@ public class PlayerOneMove : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.A))
         {
             rb.velocity = new Vector2(-leftRightSpeed, rb.velocity.y);
         }
-        else if(Input.GetKey(KeyCode.RightArrow))
+        else if(Input.GetKey(KeyCode.D))
         {
             rb.velocity = new Vector2(leftRightSpeed, rb.velocity.y);
         }
 
-        if(Input.GetKey(KeyCode.UpArrow) && isGrounded) 
+        if(Input.GetKey(KeyCode.W) && isGrounded) 
         {
             rb.velocity = new Vector2(rb.velocity.x, upSpeed);
         }

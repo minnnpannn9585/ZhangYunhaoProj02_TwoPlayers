@@ -12,28 +12,33 @@ public class ControlLight : MonoBehaviour
         for (int i = 0; i < platforms.Length; i++)
         {
             platforms[i] = transform.GetChild(i);
+            platforms[i].GetComponent<PlatformMove>().isSelected = false;
         }
+        platforms[0].GetComponent<PlatformMove>().isSelected = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.Slash))
         {
 
             if (index == platforms.Length - 1) return;
             index++;
             platforms[index].GetChild(0).gameObject.SetActive(true);
+            platforms[index].GetComponent<PlatformMove>().isSelected = true;
             platforms[index - 1].GetChild(0).gameObject.SetActive(false);
-
+            platforms[index - 1].GetComponent<PlatformMove>().isSelected = false;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.Comma))
         {
 
             if (index == 0) return;
             index--;
             platforms[index].GetChild(0).gameObject.SetActive(true);
+            platforms[index].GetComponent<PlatformMove>().isSelected = true;
             platforms[index + 1].GetChild(0).gameObject.SetActive(false);
+            platforms[index + 1].GetComponent<PlatformMove>().isSelected = false;
 
         }
     }
