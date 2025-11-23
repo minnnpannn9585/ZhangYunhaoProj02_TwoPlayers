@@ -44,5 +44,6 @@ public class player1movement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 }
