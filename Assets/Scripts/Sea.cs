@@ -11,9 +11,9 @@ public class Sea : MonoBehaviour
     {
         if (isIncreasing)
         {
-            transform.localScale += new Vector3(increaseSpeed, 0, 0) * Time.deltaTime;
+            transform.parent.localScale += new Vector3(0, increaseSpeed, 0) * Time.deltaTime;
 
-            if (transform.localScale.x > 30f)
+            if (transform.parent.localScale.y > 10f)
             {
                 isIncreasing = false;
             }
