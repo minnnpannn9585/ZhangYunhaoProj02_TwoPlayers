@@ -23,18 +23,18 @@ public class controllight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Slash))
+        if (Input.GetKeyDown(KeyCode.Slash))
         {
             index++;
             if (index != platforms.Length)
             {
                 platforms[index].GetChild(0).gameObject.SetActive(true);
                 platformFrames[index].SetActive(true);
-                platforms[index-1].GetChild(0).gameObject.SetActive(false);
+                platforms[index - 1].GetChild(0).gameObject.SetActive(false);
                 platforms[index].GetComponent<PlatformMove>().isSelected = true;
-                platformFrames[index-1].SetActive(false);
+                platformFrames[index - 1].SetActive(false);
                 platforms[index - 1].GetComponent<PlatformMove>().isSelected = false;
-                
+
             }
             else
             {
@@ -56,7 +56,7 @@ public class controllight : MonoBehaviour
                 platformFrames[index].SetActive(true);
                 platforms[index].GetComponent<PlatformMove>().isSelected = true;
                 platforms[index + 1].GetChild(0).gameObject.SetActive(false);
-                platformFrames[index+1].SetActive(false);
+                platformFrames[index + 1].SetActive(false);
                 platforms[index + 1].GetComponent<PlatformMove>().isSelected = false;
             }
             else

@@ -7,7 +7,9 @@ public class PlatformMove : MonoBehaviour
     public float speed;
     Rigidbody2D rb;
     public bool isLeftRight;
-
+    public bool isRotate;
+    public float rotationSpeed = 100f;
+    float rotation = 0f;
     [HideInInspector]
     public bool isSelected;
 
@@ -34,8 +36,6 @@ public class PlatformMove : MonoBehaviour
             rb.velocity = new Vector2(0f, 0f);
             return;
         }
-
-        if (isLeftRight)
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -49,9 +49,6 @@ public class PlatformMove : MonoBehaviour
             {
                 rb.velocity = new Vector2(0f, 0f);
             }
-        }
-        else
-        {
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 rb.velocity = new Vector2(0f, speed);
@@ -64,6 +61,19 @@ public class PlatformMove : MonoBehaviour
             {
                 rb.velocity = new Vector2(0f, 0f);
             }
+            if (isRotate == true)
+            {
+                if (Input.GetKey(KeyCode.K))
+                {
+                    rotation = rotationSpeed * Time.deltaTime;
+                }
+                else if (Input.GetKey(KeyCode.L))
+                {
+                    rotation = -rotationSpeed * Time.deltaTime;
+                }
+                transform.Rotate(0f, 0f, rotation);
+            }
+
         }
 
         if (transform.position.x < minX)

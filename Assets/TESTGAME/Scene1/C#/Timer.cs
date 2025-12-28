@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     public float timer = 5f;
     public Sea sea;
-    
+
     void Update()
     {
         timer -= Time.deltaTime;
