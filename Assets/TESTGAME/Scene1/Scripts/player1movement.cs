@@ -10,6 +10,8 @@ public class player1movement : MonoBehaviour
 
     public Rigidbody2D rb;
     public bool isGrounded = true;
+    public PressToReload pressToReload;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class player1movement : MonoBehaviour
         if (other.gameObject.CompareTag("dog"))
         {
             Destroy(gameObject);
+            pressToReload.gameEnd = true;
         }
     }
 }
