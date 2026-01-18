@@ -159,6 +159,7 @@ MonoBehaviour:
   weight: 100
   rb: {fileID: 0}
   isGrounded: 1
+  pressToReload: {fileID: 0}
 --- !u!61 &19092635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1228,6 +1229,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 850131743}
   pointTwo: {fileID: 221982405}
 --- !u!61 &339324028
@@ -2243,6 +2245,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 674294897}
   pointTwo: {fileID: 119028444}
 --- !u!61 &609283997
@@ -2703,6 +2706,7 @@ MonoBehaviour:
   isRotate: 1
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 742578660}
   pointTwo: {fileID: 1496746050}
 --- !u!61 &729184155
@@ -3031,6 +3035,7 @@ MonoBehaviour:
   isRotate: 1
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 803212522}
   pointTwo: {fileID: 1115578625}
 --- !u!61 &804011654
@@ -4105,6 +4110,7 @@ MonoBehaviour:
   isRotate: 1
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 2080928996}
   pointTwo: {fileID: 1178548033}
 --- !u!61 &1210642329
@@ -5684,6 +5690,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 432212486}
   pointTwo: {fileID: 918496802}
 --- !u!61 &1940008585

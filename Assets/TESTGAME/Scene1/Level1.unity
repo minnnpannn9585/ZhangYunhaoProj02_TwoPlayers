@@ -300,6 +300,7 @@ MonoBehaviour:
   weight: 100
   rb: {fileID: 0}
   isGrounded: 1
+  pressToReload: {fileID: 0}
 --- !u!1 &56839345
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80a055a4eb75c341a5520dbb3a2ecc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10000000
+  timer: 20
   sea: {fileID: 1401257533}
 --- !u!1 &362358787
 GameObject:
@@ -2538,6 +2539,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 1367481012}
   pointTwo: {fileID: 950214038}
 --- !u!61 &1112372158
@@ -2872,6 +2874,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 1136299425}
   pointTwo: {fileID: 390464099}
 --- !u!1 &1207325664
@@ -3888,6 +3891,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 973729258}
   pointTwo: {fileID: 1473281819}
 --- !u!61 &1512362031
@@ -4686,6 +4690,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 764802984}
   pointTwo: {fileID: 679000468}
 --- !u!1 &1886217523
@@ -5101,6 +5106,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 1829202122}
   pointTwo: {fileID: 851310149}
 --- !u!61 &2004208069
@@ -5525,6 +5531,7 @@ MonoBehaviour:
   isRotate: 0
   rotationSpeed: 100
   isSelected: 0
+  isPlayer: 1
   pointOne: {fileID: 373727442}
   pointTwo: {fileID: 917063738}
 --- !u!61 &2044054212
