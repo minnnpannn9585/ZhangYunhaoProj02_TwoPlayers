@@ -160,8 +160,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 0
-  pointOne: {fileID: 323453995}
-  pointTwo: {fileID: 1112197147}
+  isScale: 0
+  pointOne: {fileID: 1112197147}
+  pointTwo: {fileID: 323453995}
+  scale: 0
 --- !u!61 &62739061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1344,8 +1346,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 0
+  isScale: 0
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
+  scale: 0
 --- !u!61 &476737744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2155,8 +2159,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 0
-  pointOne: {fileID: 323453995}
-  pointTwo: {fileID: 1112197147}
+  isScale: 0
+  pointOne: {fileID: 1112197147}
+  pointTwo: {fileID: 323453995}
+  scale: 0
 --- !u!61 &836949053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4809,8 +4815,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 0
+  isScale: 0
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
+  scale: 0
 --- !u!61 &1921488542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5576,8 +5584,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 0
+  isScale: 0
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
+  scale: 0
 --- !u!61 &2039266017
 BoxCollider2D:
   m_ObjectHideFlags: 0

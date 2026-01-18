@@ -22,6 +22,7 @@ public class PlatformMove : MonoBehaviour
     private float maxX;
     private float maxY;
     public float scale;
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,7 +30,15 @@ public class PlatformMove : MonoBehaviour
         minY = pointOne.position.y;
         maxX = pointTwo.position.x;
         maxY = pointTwo.position.y;
-        isPlayer = false;
+
+        if (!isPlayer)
+        {
+            if (!isRotate)
+            {
+                rb.velocity = new Vector2(speed, 0f);
+            }
+        }
+        
     }
     void Update()
     {
@@ -124,25 +133,29 @@ public class PlatformMove : MonoBehaviour
             }
             if (isScale == true) {
                 if (Input.GetKey(KeyCode.J))
-                    transform.localScale = new Vector3(scale, scale,scale);
-                if (Input.GetKey(KeyCode.K))
-                    transform.localScale = new Vector3(transform.localScale.x/scale, transform.localScale.y / scale, transform.localScale.z / scale);
+                {
+                    transform.localScale *= scale;
+                }
+                
+                    //transform.localScale = new Vector3(scale, scale,scale);
+                    if (Input.GetKey(KeyCode.K))
+                    {
+                        transform.localScale /= scale;
+                    }
+                    //transform.localScale = new Vector3(transform.localScale.x/scale, transform.localScale.y / scale, transform.localScale.z / scale);
             } 
-            
-
-
-
 
         }
         else {
             if (isRotate == true)
             {
                 rotation = rotationSpeed * Time.deltaTime;
+                transform.Rotate(0f, 0f, rotation);
             }
 
             if (isRotate == false)
             {
-                rb.velocity = new Vector2(speed, 0f);
+                //rb.velocity = new Vector2(speed, 0f);
                 if (transform.position.x < minX + transform.localScale.x / 2)
                 {
                     rb.velocity = new Vector2(speed, 0f);
@@ -152,7 +165,7 @@ public class PlatformMove : MonoBehaviour
                     rb.velocity = new Vector2(-speed, 0f);
                 }
             }
-            transform.Rotate(0f, 0f, rotation);
+            
         }
     }
     

@@ -1617,7 +1617,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.04, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.62, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1512362028}
@@ -2540,8 +2540,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 1367481012}
   pointTwo: {fileID: 950214038}
+  scale: 0
 --- !u!61 &1112372158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2875,8 +2877,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 1136299425}
   pointTwo: {fileID: 390464099}
+  scale: 0
 --- !u!1 &1207325664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,14 +3870,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512362027}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071064, w: 0.70710725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.45, y: 2.89, z: 0}
-  m_LocalScale: {x: 2.86, y: 0.30149907, z: 1}
+  m_LocalScale: {x: 0.3, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 855526701}
   m_Father: {fileID: 2131110874}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1512362030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3892,8 +3896,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 973729258}
   pointTwo: {fileID: 1473281819}
+  scale: 0
 --- !u!61 &1512362031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4691,8 +4697,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 764802984}
   pointTwo: {fileID: 679000468}
+  scale: 0
 --- !u!1 &1886217523
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,8 +5115,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 1829202122}
   pointTwo: {fileID: 851310149}
+  scale: 0.99
 --- !u!61 &2004208069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5532,8 +5542,10 @@ MonoBehaviour:
   rotationSpeed: 100
   isSelected: 0
   isPlayer: 1
+  isScale: 0
   pointOne: {fileID: 373727442}
   pointTwo: {fileID: 917063738}
+  scale: 0
 --- !u!61 &2044054212
 BoxCollider2D:
   m_ObjectHideFlags: 0
