@@ -22,6 +22,8 @@ public class PlatformMove : MonoBehaviour
     private float maxX;
     private float maxY;
     public float scale;
+    public float maxScale;
+    public float minScale;
     
     private void Start()
     {
@@ -132,17 +134,17 @@ public class PlatformMove : MonoBehaviour
                 }
             }
             if (isScale == true) {
-                if (Input.GetKey(KeyCode.N))
+                if (Input.GetKey(KeyCode.N) && transform.localScale.z < maxScale)
                 {
                     transform.localScale *= scale;
                 }
                 
-                    //transform.localScale = new Vector3(scale, scale,scale);
-                if (Input.GetKey(KeyCode.M))
-                    {
-                        transform.localScale /= scale;
-                    }
-                    //transform.localScale = new Vector3(transform.localScale.x/scale, transform.localScale.y / scale, transform.localScale.z / scale);
+                //transform.localScale = new Vector3(scale, scale,scale);
+                if (Input.GetKey(KeyCode.M) && transform.localScale.z > minScale) 
+                {
+                    transform.localScale /= scale;
+                }
+                //transform.localScale = new Vector3(transform.localScale.x/scale, transform.localScale.y / scale, transform.localScale.z / scale);
             } 
 
         }

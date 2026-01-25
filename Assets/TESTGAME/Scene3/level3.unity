@@ -250,6 +250,8 @@ MonoBehaviour:
   pointOne: {fileID: 1112197147}
   pointTwo: {fileID: 323453995}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &62739061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1393,6 +1395,8 @@ MonoBehaviour:
   pointOne: {fileID: 1112197147}
   pointTwo: {fileID: 323453995}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &266191191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2040,6 +2044,8 @@ MonoBehaviour:
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &476737744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2238,6 +2244,8 @@ MonoBehaviour:
   pointOne: {fileID: 1835742318}
   pointTwo: {fileID: 642466759}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &504542157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3285,6 +3293,8 @@ MonoBehaviour:
   pointOne: {fileID: 1112197147}
   pointTwo: {fileID: 323453995}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &836949053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4046,7 +4056,9 @@ MonoBehaviour:
   isScale: 1
   pointOne: {fileID: 984971143}
   pointTwo: {fileID: 671692177}
-  scale: 0
+  scale: 1.01
+  maxScale: 1.5
+  minScale: 0.5
 --- !u!61 &1047449681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4475,7 +4487,9 @@ MonoBehaviour:
   isScale: 1
   pointOne: {fileID: 1923557784}
   pointTwo: {fileID: 1673492739}
-  scale: 0
+  scale: 1.01
+  maxScale: 1.5
+  minScale: 0.5
 --- !u!61 &1156687761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5303,6 +5317,8 @@ MonoBehaviour:
   pointOne: {fileID: 331525352}
   pointTwo: {fileID: 921935089}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &1571661708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5984,6 +6000,8 @@ MonoBehaviour:
   pointOne: {fileID: 196289468}
   pointTwo: {fileID: 227541951}
   scale: 1.01
+  maxScale: 1.5
+  minScale: 0.5
 --- !u!61 &1697406386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7783,6 +7801,8 @@ MonoBehaviour:
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &1921488542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8327,6 +8347,8 @@ MonoBehaviour:
   pointOne: {fileID: 1739389446}
   pointTwo: {fileID: 1397777090}
   scale: 0.99
+  maxScale: 0
+  minScale: 0
 --- !u!61 &1974725810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8766,6 +8788,8 @@ MonoBehaviour:
   pointOne: {fileID: 323453995}
   pointTwo: {fileID: 1112197147}
   scale: 0
+  maxScale: 0
+  minScale: 0
 --- !u!61 &2039266017
 BoxCollider2D:
   m_ObjectHideFlags: 0
