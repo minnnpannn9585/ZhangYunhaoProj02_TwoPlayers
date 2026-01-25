@@ -30,7 +30,7 @@ public class PlatformMove : MonoBehaviour
         minY = pointOne.position.y;
         maxX = pointTwo.position.x;
         maxY = pointTwo.position.y;
-
+        scale = 1.001f;
         if (!isPlayer)
         {
             if (!isRotate)
@@ -51,11 +51,11 @@ public class PlatformMove : MonoBehaviour
             }
             if (isRotate == true)
             {
-                if (Input.GetKey(KeyCode.LeftArrow))
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
                     rotation = rotationSpeed * Time.deltaTime;
                 }
-                else if (Input.GetKey(KeyCode.RightArrow))
+                else if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
                     rotation = -rotationSpeed * Time.deltaTime;
                 }
@@ -132,13 +132,13 @@ public class PlatformMove : MonoBehaviour
                 }
             }
             if (isScale == true) {
-                if (Input.GetKey(KeyCode.J))
+                if (Input.GetKey(KeyCode.N))
                 {
                     transform.localScale *= scale;
                 }
                 
                     //transform.localScale = new Vector3(scale, scale,scale);
-                    if (Input.GetKey(KeyCode.K))
+                if (Input.GetKey(KeyCode.M))
                     {
                         transform.localScale /= scale;
                     }
