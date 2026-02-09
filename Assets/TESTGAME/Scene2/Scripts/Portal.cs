@@ -13,5 +13,6 @@ public class Portal : MonoBehaviour
         {
             other.transform.position = target.position;
         }
+        }
     }
 }
